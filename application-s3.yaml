@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: crossplane-s3-bucket-1111
+  name: crossplane-s3-bucket-1111-333
   namespace: argocd  # The namespace where ArgoCD is installed
 spec:
   project: default
   source:
     repoURL: 'https://github.com/ziberini/my-new-app.git'  # Replace with your Git repository URL
-    path: /test # Path to the directory containing s3-bucket.yaml
+    path: test # Path to the directory containing s3-bucket.yaml
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'

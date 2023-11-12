@@ -2,6 +2,7 @@ apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:
   name: test-test-crossplane-my1113333
+  namespace: crossplane-system
 spec:
   forProvider:
     region: us-east-1
