@@ -1,7 +1,7 @@
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:
-  name: test-test-crossplane-my111
+  name: test-test-crossplane-my1113333
 spec:
   forProvider:
     region: us-east-1
