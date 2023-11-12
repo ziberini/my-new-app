@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: crossplane-s3-bucket-1111
+  namespace: argocd  # The namespace where ArgoCD is installed
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/ziberini/my-new-app.git'  # Replace with your Git repository URL
+    path: /test # Path to the directory containing s3-bucket.yaml
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: crossplane-system  # Namespace where Crossplane is installed
+  syncPolicy:
+    automated:  # Optional: set to automated for automatic sync
+      prune: true
+      selfHeal: true
