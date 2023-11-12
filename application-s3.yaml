@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: crossplane-s3-bucket-1111-333
+  name: my-buckets-infra
   namespace: argocd  # The namespace where ArgoCD is installed
 spec:
   project: default
