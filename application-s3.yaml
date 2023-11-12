@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: crossplane-system  # Namespace where Crossplane is installed
+    # namespace: crossplane-system  # Namespace where Crossplane is installed
   syncPolicy:
     automated:  # Optional: set to automated for automatic sync
       prune: true
